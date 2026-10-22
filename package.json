@@ -1,0 +1,45 @@
+{
+  "name": "inka",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "rsbuild build && bun scripts/build-electron.mjs",
+    "build-storybook": "storybook build",
+    "dev": "bun scripts/desktop-dev.mjs",
+    "lint": "rslint",
+    "preview": "rsbuild preview",
+    "storybook": "storybook dev -p 6006",
+    "test": "rstest",
+    "test:watch": "rstest --watch",
+    "fmt": "oxfmt",
+    "fmt:check": "oxfmt --check"
+  },
+  "dependencies": {
+    "@solidjs/web": "^2.0.0-rc.15",
+    "@xstate/effect": "^0.1.0-alpha.4",
+    "cn": "^0.5.0",
+    "effect": "^4.0.0-rc.118",
+    "solid-js": "^2.0.0-rc.15",
+    "xstate": "^6.0.0-alpha.70"
+  },
+  "devDependencies": {
+    "@rsbuild/core": "^2.2.14",
+    "@rsbuild/plugin-solid": "^2.0.0-rc.1",
+    "@rsbuild/plugin-tailwindcss": "^2.0.3",
+    "@rslint/core": "^0.9.5",
+    "@rstest/adapter-rsbuild": "^0.12.3",
+    "@rstest/core": "^0.12.3",
+    "@storybook/addon-docs": "^10.6.3",
+    "@testing-library/dom": "^10.4.2",
+    "@testing-library/jest-dom": "^7.0.1",
+    "@types/node": "^24.19.2",
+    "electron": "^44.9.3",
+    "happy-dom": "^20.14.6",
+    "oxfmt": "^0.74.0",
+    "storybook": "^10.6.3",
+    "storybook-solidjs-vite": "latest",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^6.0.3"
+  }
+}

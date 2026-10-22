@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "lib": ["DOM", "ESNext"],
+    "jsx": "preserve",
+    "target": "ESNext",
+    "noEmit": true,
+    "skipLibCheck": true,
+    "types": ["@rsbuild/core/types", "node"],
+    "jsxImportSource": "@solidjs/web",
+    "useDefineForClassFields": true,
+
+    /* modules */
+    "moduleDetection": "force",
+    "moduleResolution": "bundler",
+    "verbatimModuleSyntax": true,
+    "resolveJsonModule": true,
+    "allowImportingTsExtensions": true,
+
+    /* type checking */
+    "noUnusedLocals": true,
+    "noUnusedParameters": true
+  },
+  "include": ["src", "electron"]
+}
